@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- <NuxtWelcome /> -->
+  <div class="h-screen box-border flex flex-col">
     <Header></Header>
-    <NuxtPage />
+    <NuxtPage  class="flex-1" />
   </div>
 </template>

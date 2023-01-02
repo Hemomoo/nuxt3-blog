@@ -14,7 +14,17 @@ module.exports = {
           "error": "#F87272",
         },
       },
+      
     ],
+  },
+  theme:{
+    colors:{
+      "red":"#FF6262",
+      "white":"#FFFFFF"
+    }
+  },
+  variants: {
+   
   },
   plugins: [
     require('daisyui'),
