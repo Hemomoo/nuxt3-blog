@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/hemooo/Documents/code/nuxt3-blog/node_modules/nuxt/dist/app/entry.mjs": {
+  "/Users/hemooo/Documents/code/nuxt3-blog/node_modules/_nuxt@3.0.0@nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/Users/hemooo/Documents/code/nuxt3-blog/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "/Users/hemooo/Documents/code/nuxt3-blog/node_modules/_nuxt@3.0.0@nuxt/dist/app/entry.mjs"
   }
 }
