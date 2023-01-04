@@ -39,7 +39,6 @@
     border-radius: 18px;
     background: #97DECE;
     box-shadow: inset -5px 5px 10px #91d5c6, inset 5px -5px 10px #9de7d6;
-
     &:hover::after {
         content: "";
         position: absolute;
@@ -61,9 +60,16 @@
 
 @keyframes charging {
     50% {
-        top: 50%;
         // box-shadow: 0 14px 28px rgba(0, 150, 136, 0.83), 0px 4px 10px rgba(9, 188, 215, 0.4);
     }
+
+    95% {
+        top: 5%;
+        filter: hue-rotate(0deg);
+        border-radius: 0 0 5px 5px;
+        // box-shadow: 0 14px 28px rgba(4, 188, 213, .2), 0 10px 10px rgba(9, 188, 215, 0.08);
+    }
+
     100% {
         top: 0%;
         filter: hue-rotate(0deg);
