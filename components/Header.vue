@@ -20,7 +20,7 @@
           <NuxtLink to="/blog">博客</NuxtLink>
         </li>
         <li class="hover:text-secondary">
-          <NuxtLink>关于我</NuxtLink>
+          <NuxtLink to="/about">关于我</NuxtLink>
         </li>
       </ul>
     </div>
