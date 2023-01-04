@@ -8,7 +8,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.15.8",
     "@nuxtjs/tailwindcss": "^6.2.0",
+    "@vueuse/nuxt": "^9.5.0",
     "autoprefixer": "latest",
     "node-sass": "^8.0.0",
     "nuxt": "3.0.0",

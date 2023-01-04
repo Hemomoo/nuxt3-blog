@@ -3,10 +3,10 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#717EF1",
-          "secondary": "#FF6262",
-          "accent": "#37CDBE",
-          "neutral": "#3D4451",
+          "primary": "#439A97",
+          "secondary": "#CBEDD5",
+          "accent": "#97DECE", // 加重
+          "neutral": "#62B6B7",
           "base-100": "#FFFFFF",
           "info": "#3ABFF8",
           "success": "#36D399",
@@ -28,6 +28,7 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
+    require('@tailwindcss/line-clamp'),
   ],
   //...
 }  

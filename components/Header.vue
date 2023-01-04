@@ -10,10 +10,18 @@
     <!-- nav -->
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 text-white">
-        <li class="hover:text-red"><NuxtLink>首页</NuxtLink><span>/</span></li>
-        <li class="hover:text-red"><NuxtLink>作品</NuxtLink><span>/</span></li>
-        <li class="hover:text-red"><NuxtLink>博客</NuxtLink><span>/</span></li>
-        <li class="hover:text-red"><NuxtLink>关于我</NuxtLink></li>
+        <li class="hover:text-secondary">
+          <NuxtLink to="/">首页</NuxtLink>
+        </li>
+        <li class="hover:text-secondary">
+          <NuxtLink>作品</NuxtLink>
+        </li>
+        <li class="hover:text-secondary">
+          <NuxtLink to="/blog">博客</NuxtLink>
+        </li>
+        <li class="hover:text-secondary">
+          <NuxtLink>关于我</NuxtLink>
+        </li>
       </ul>
     </div>
   </div>
@@ -23,5 +31,4 @@
 
 <style lang="scss" scoped>
 // .navbar{}
-
 </style>
