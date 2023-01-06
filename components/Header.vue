@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar px-16 sticky">
+  <div class="navbar px-16 py-10 sticky top-0 box-border w-full">
     <div class="flex-1">
       <div class="avatar">
         <div class="w-16 rounded-full ring">
@@ -13,13 +13,13 @@
         <li class="hover:text-secondary">
           <NuxtLink to="/">首页</NuxtLink>
         </li>
-        <li class="hover:text-secondary">
+        <li class="hover:text-secondary cursor-pointer">
           <NuxtLink to="/opus">作品</NuxtLink>
         </li>
-        <li class="hover:text-secondary">
+        <li class="hover:text-secondary cursor-pointer">
           <NuxtLink to="/blog">博客</NuxtLink>
         </li>
-        <li class="hover:text-secondary">
+        <li class="hover:text-secondary cursor-pointer">
           <NuxtLink to="/about">关于我</NuxtLink>
         </li>
       </ul>

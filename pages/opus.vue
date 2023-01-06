@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto">
+    <div class="mx-auto py-10">
         <template v-for="(item, index) in 10" :key="index">
             <div class="flex  w-full flex-row">
 

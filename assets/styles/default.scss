@@ -1,8 +1,9 @@
 html,body{
     margin: 0;
     padding: 0;
-    min-width: 100vw;
+    // width: 100vw;
     min-height: 100vh;
+    box-sizing: border-box;
     background-attachment: fixed;
     background-color: #439A97;
     background-image: url(http://zhongguose.com/img/texture.png);
