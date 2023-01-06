@@ -1,31 +1,38 @@
 <template>
-    <div class="p-16 grid grid-cols-6 overflow-x-hidden">
-        <template v-for="(item, index) in 20" :key="index">
-            <div class="bg-shadow m-8 p-4  h-80 hover:scale-110  transition-transform  duration-1000   ease-linear">
-                <div class="text-xl  text-box   cursor-pointer text-white">
-                    Lorem ipsum dolor sit, amet consectetur
-                    adipisicing
-                    elit.
-                    Repellat dolorem
-                    reprehenderit, accusantium
-                    fugiat nam impedit. Laudantium vitae saepe labore pariatur optio dolor officia delectus sint
-                    incidunt,
-                    id
-                    consequuntur aut quibusdam.
+    <div class="p-16 grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 overflow-x-hidden ">
+        <template v-for="(item, index) in data.data" :key="index">
+            <div class="card card-side bg-base-100 shadow-xl m-10">
+                <figure><img class="object-cover" :src="item.info.imgurl" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">{{ item.info.title }}</h2>
+                    <p>Click the button to watch on Jetflix app.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Watch</button>
+                    </div>
                 </div>
             </div>
-
         </template>
     </div>
 </template>
-
-<script setup lang="ts">
+<script setup>
 useHead({
     title: '博客',
     meta: [
-        { name: 'description', content: 'My amazing site.' }
+        { name: 'referrer', content: 'no-referrer' }
     ],
 })
+
+const { data } = await useFetch('https://api.vvhan.com/api/douban')
+
+function info(url) {
+    console.log('url: ', url);
+    useFetch(url).then(res => {
+        console.log('res: ', res);
+    })
+}
+
+
+console.log('data: ', data.value.data);
 
 </script>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="hero min-h-full">
-        <div class="hero-overlay"></div>
+        <div class=""></div>
         <div class="hero-content text-center  text-white">
             <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">{{ data.data.tag }}</h1>
