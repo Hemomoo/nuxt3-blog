@@ -1,7 +1,7 @@
 <template>
     <div class="p-16 grid grid-cols-6 overflow-x-hidden">
         <template v-for="(item, index) in 20" :key="index">
-            <div class="bg-shadow m-8 p-4  h-80 hover:scale-110  duration-75   ease-linear">
+            <div class="bg-shadow m-8 p-4  h-80 hover:scale-110  transition-transform  duration-1000   ease-linear">
                 <div class="text-xl  text-box   cursor-pointer text-white">
                     Lorem ipsum dolor sit, amet consectetur
                     adipisicing
@@ -20,7 +20,12 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+    title: '博客',
+    meta: [
+        { name: 'description', content: 'My amazing site.' }
+    ],
+})
 
 </script>
 
@@ -39,6 +44,7 @@
     border-radius: 18px;
     background: #97DECE;
     box-shadow: inset -5px 5px 10px #91d5c6, inset 5px -5px 10px #9de7d6;
+
     &:hover::after {
         content: "";
         position: absolute;
@@ -50,7 +56,7 @@
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 18px;
         animation-name: charging;
-        animation-duration: 4s;
+        animation-duration: 1s;
         animation-timing-function: infinite;
         animation-iteration-count: 1;
         animation-fill-mode: forwards; // 动画最后一阵停止

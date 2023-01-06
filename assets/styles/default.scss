@@ -1,12 +1,24 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    // width: 100vw;
-    min-height: 100vh;
-    box-sizing: border-box;
-    background-attachment: fixed;
-    background-color: #439A97;
-    background-image: url(http://zhongguose.com/img/texture.png);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  // width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-color: #439a97;
+  background-image: url(http://zhongguose.com/img/texture.png);
+}
+
+@font-face {
+  font-family: HarmonyOS_Sans_SC_Medium;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff") format("woff");
+}
+* {
+  font-family: HarmonyOS_Sans_SC_Medium;
 }
 
 // #E3FDFD

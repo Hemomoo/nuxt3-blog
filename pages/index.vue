@@ -33,6 +33,15 @@
 <script  setup  lang="ts">
 import { useNow } from '@vueuse/core'
 const now = useNow()
+
+
+useHead({
+    title: '首页',
+    meta: [
+        { name: 'description', content: 'My amazing site.' }
+    ],
+})
+
 // const themeStore = useThemeStore()
 
 const hh = ref<string>('00')
