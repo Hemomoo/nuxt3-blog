@@ -1,13 +1,21 @@
 <template>
     <div class="p-16 grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 overflow-x-hidden ">
         <template v-for="(item, index) in data.data" :key="index">
-            <div class="card card-side bg-base-100 shadow-xl m-10">
-                <figure><img class="object-cover" :src="item.info.imgurl" alt="Shoes" /></figure>
-                <div class="card-body">
-                    <h2 class="card-title">{{ item.info.title }}</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Watch</button>
+            <div class="flex m-10 bg-shadow rounded-2xl text-white text-sm">
+                <img class="object-cover  flex-1 w-40 inline-block rounded-l-2xl" :src="item.info.imgurl" alt="Shoes" />
+                <div class="p-4 flex flex-col justify-between">
+                    <h1 class="text-white text-xl">{{ item.title }}</h1>
+                    <p class="text-box">{{ item.info.yanyuan }}</p>
+                    <!-- 查看详情 -->
+                    <div >
+                        <a class="link link-hover flex justify-end" :href="item.info.url">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6 text-right">
+                                <path fill-rule="evenodd"
+                                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -24,23 +32,13 @@ useHead({
 
 const { data } = await useFetch('https://api.vvhan.com/api/douban')
 
-function info(url) {
-    console.log('url: ', url);
-    useFetch(url).then(res => {
-        console.log('res: ', res);
-    })
-}
-
-
-console.log('data: ', data.value.data);
-
 </script>
 
 <style lang="scss" scoped>
 .text-box {
     display: -webkit-box;
     overflow: hidden;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
 

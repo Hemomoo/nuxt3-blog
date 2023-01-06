@@ -5,7 +5,7 @@
             <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">{{ data.data.tag }}</h1>
                 <p class="mb-5">{{ data.data.content }}</p>
-                <p class="w-full text-right">———— &nbsp;{{ data.data.origin }}</p>
+                <p class="text-right">{{ data.data.origin }}</p>
             </div>
         </div>
     </div>

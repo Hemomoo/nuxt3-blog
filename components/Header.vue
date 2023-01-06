@@ -3,7 +3,7 @@
     <div class="flex-1">
       <div class="avatar">
         <div class="w-16 rounded-full ring">
-          <img src="https://placeimg.com/192/192/people" />
+          <img src="https://cdn.seovx.com/d/?mom=302" />
         </div>
       </div>
     </div>
