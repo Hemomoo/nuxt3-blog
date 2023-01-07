@@ -6,11 +6,25 @@
                 <div class="p-4 flex flex-col justify-between">
                     <h1 class="text-white text-xl">{{ item.title }}</h1>
                     <p class="text-box">{{ item.info.yanyuan }}</p>
+                    <!-- 评分 -->
+                    <div class="rating rating-md rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2  mask-half-2" />
+                    </div>
                     <!-- 查看详情 -->
-                    <div >
+                    <div>
                         <a class="link link-hover flex justify-end" :href="item.info.url">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-6 h-6 text-right">
+                                class="w-6 h-6 text-right hover:fill-secondary duration-75 hover:scale-125">
                                 <path fill-rule="evenodd"
                                     d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z"
                                     clip-rule="evenodd" />
