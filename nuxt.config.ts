@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
     ],
     app: {
-        baseURL: "/nuxt",
+        baseURL: "/blog",
     },
     css: ["@/assets/styles/default.scss",
         // "normalize.css"
