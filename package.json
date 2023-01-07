@@ -21,8 +21,6 @@
     "daisyui": "^2.46.1",
     "normalize.css": "^8.0.1"
   },
-  "dependencies": {
-   
-  },
+  "dependencies": {},
   "__npminstall_done": false
 }
