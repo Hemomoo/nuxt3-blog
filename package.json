@@ -17,10 +17,10 @@
     "nuxt": "3.0.0",
     "postcss": "latest",
     "sass": "^1.57.1",
-    "sass-loader": "^13.2.0",
-    "daisyui": "^2.46.1",
-    "normalize.css": "^8.0.1"
+    "sass-loader": "^13.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "daisyui": "^2.46.1"
+  },
   "__npminstall_done": false
 }
