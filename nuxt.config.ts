@@ -5,8 +5,14 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
 
     ],
+
     app: {
         baseURL: "/blog",
+        head: {
+            link: [
+                { rel: 'icon', type: "image/png", href: 'favicon.ico' }
+            ],
+        },
     },
     css: ["@/assets/styles/default.scss",
         // "normalize.css"
