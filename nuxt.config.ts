@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     ],
 
     app: {
-        baseURL: "/blog",
+        // baseURL: "/",  // 本地
+        baseURL: "/blog", // 服务器
         head: {
             link: [
                 { rel: 'icon', type: "image/png", href: 'favicon.ico' }
